@@ -16,11 +16,11 @@
 ---
 
 ## 报错
-如果文档出现错误，可以直接[提交Issue](https://github.com/Redersha/panda-server-guide-v2/issues/new)，（一般情况下，最慢）在提交后一周内完成pr并合并。</br>
+如果文档出现错误，可以直接[提交Issue](https://github.com/Redersha/panda_server_guide_v2/issues/new)，（一般情况下，最慢）在提交后一周内完成pr并合并。</br>
 或者可以联系q群的`@再也不剪宣传片了`，但处理速度不会很快。
 
 ## 请求新内容
-如果你想要本文档还未涉及的服务器相关教程，可以[提交Issue](https://github.com/Redersha/panda-server-guide-v2/issues/new)，（一般情况下，最慢）在提交后一周内完成pr并合并。
+如果你想要本文档还未涉及的服务器相关教程，可以[提交Issue](https://github.com/Redersha/panda_server_guide_v2/issues/new)，（一般情况下，最慢）在提交后一周内完成pr并合并。
 
 ## 协助我们编写
 本站虽然是以文档的形式呈现，但在朝wiki/指南的方向发展。因此工作量比仅仅写一个独立文章要大得多。</br>

@@ -67,7 +67,7 @@ export default defineConfig({
       }
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Redersha/panda-server-guide-v2' }
+      { icon: 'github', link: 'https://github.com/Redersha/panda_server_guide_v2' }
     ],
     // .vitepress/config.mts
     footer: {
