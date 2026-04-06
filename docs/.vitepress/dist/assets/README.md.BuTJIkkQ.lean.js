@@ -1,0 +1,1 @@
+import{_ as e,o as a,c as t,ai as i}from"./chunks/framework.CPhGBfAl.js";const f=JSON.parse('{"title":"大熊猫服务器文档","description":"","frontmatter":{},"headers":[],"relativePath":"README.md","filePath":"README.md"}'),n={name:"README.md"};function o(s,r,l,h,g,c){return a(),t("div",null,[...r[0]||(r[0]=[i("",38)])])}const p=e(n,[["render",o]]);export{f as __pageData,p as default};
