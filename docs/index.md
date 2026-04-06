@@ -18,13 +18,17 @@ hero:
       link: /advance/
 
 features:
-  - title: QQ群号276051457
+  - title: 💬QQ群号276051457
     details: 愣着干嘛快进群
-  - title: 想要就尽管提
+  - title: 🔧想要就尽管提
     details: 想要新教程？接受Issues，最快2小时内端上来
     link: https://github.com/Redersha/panda-server-guide-v2/issues
-  - title: 协作我们开发
+  - title: 🔧协作我们开发
     details: 直接PR，别犹豫，或者与作者一起写本文档
     link: https://github.com/Redersha/panda-server-guide-v2/pulls
+  - title: ⭐本服性质：轻量插件生存服
+    details: 在不改变原版玩法和流程的情况下，加入了少许插件以增加娱乐性
+  - title: ⭐本服类型：商业服
+    details: 商业的部分是赞助，维持服务器开设需要钱，但是我会因任何的资助行为而造成玩家之间的差距
 ---
 
