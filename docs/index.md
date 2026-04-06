@@ -18,8 +18,8 @@ hero:
       link: /advance/
 
 features:
-  - title: QQ群号
-    details: 276051457
+  - title: QQ群号276051457
+    details: 愣着干嘛快进群
   - title: 想要就尽管提
     details: 想要新教程？接受Issues，最快2小时内端上来
     link: https://github.com/Redersha/panda-server-guide-v2/issues
