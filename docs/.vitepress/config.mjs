@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   base: '/panda_server_guide_v2/',
-  title: "大熊猫服务器文档",
+  title: "大熊猫服务器文档v2",
   description: "教程、指南与规则",
   themeConfig: {
     nav: [

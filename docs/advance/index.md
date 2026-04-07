@@ -5,6 +5,6 @@
 本章将详细写出服务器进阶内容的相关教程。
 这些内容可能需要一定的相关知识储备，因此我们会给出相关内容所需的前提知识的链接以方便理解和学习。
 
-服务器的大多数自定义内容基于CraftEngine插件。本章内容基于[CraftEngine文档](https://ce.gtemc.cn/zh-Hans/)编写。
+服务器的大多数自定义内容基于CraftEngine插件。本章内容基于[CraftEngine文档](https://xiao-momi.github.io/craft-engine-wiki/zh-Hans/)编写。
 
 服务器可能修改了CraftEngine插件的部分配置，所以以游戏内实际情况为准。

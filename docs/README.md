@@ -1,19 +1,18 @@
-# 大熊猫服务器文档 <!-- {docsify-ignore-all} -->
+# panda_server_guide_v2/大熊猫服务器文档v2 <!-- {docsify-ignore-all} -->
 **加入服务器交流群：276051457**</br>
 
 ## 这是什么？
+一个VitePress文档站。
 本站有服务器的指南、教程与规则。</br>
 已将[原始长文](https://redersha.github.io/2026/02/12/MCJE_panda_server_guide_v2/)拆分成可搜索、可导航、可渐进阅读的文档站。按章节进入，快速找到对应内容。</br>
 文档最初由腐竹 `@没事别@MagicMakes不然一棒槌脑瓜打没`和其他群友编写。然后由`@再也不剪宣传片了`将文档重新整理并分章节写在这里。
 
----
+
 ## 许可
 
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 本项目文档内容遵循 **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** 许可协议。您可以在遵守该协议的前提下自由分享和改编本作品，但必须**署名**，并以**相同方式共享**任何演绎作品。
-
----
 
 ## 报错
 如果文档出现错误，可以直接[提交Issue](https://github.com/Redersha/panda_server_guide_v2/issues/new)，（一般情况下，最慢）在提交后一周内完成pr并合并。</br>
@@ -25,8 +24,6 @@
 ## 协助我们编写
 本站虽然是以文档的形式呈现，但在朝wiki/指南的方向发展。因此工作量比仅仅写一个独立文章要大得多。</br>
 如果你想要长期和我们一起完善本项目，成为协作者，请联系[mechsteam@outlook.com](mailto:mechsteam@outlook.com)或[sh_515183@163.com](mailto:sh_515183@163.com)。
-
----
 
 ## 版权、引用与许可协议说明
 
