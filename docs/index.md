@@ -8,6 +8,9 @@ hero:
   tagline: 腐竹是萝莉控大蟑螂
   actions:
     - theme: brand
+      text: ⚡️【新手必看】快速开始
+      link: /quick_guide
+    - theme: alt
       text: 注意事项
       link: /notice/
     - theme: alt
@@ -18,14 +21,11 @@ hero:
       link: /advance/
 
 features:
+  - title: 【前往本文档的Github Issues】
+    details: 想要新教程？接受Issues或pr，最快2小时内端上来
+    link: https://github.com/Redersha/panda_server_guide_v2/issues
   - title: 💬QQ群号276051457
     details: 愣着干嘛快进群
-  - title: 🔧想要就尽管提
-    details: 想要新教程？接受Issues，最快2小时内端上来
-    link: https://github.com/Redersha/panda_server_guide_v2/issues
-  - title: 🔧协作我们开发
-    details: 直接PR，别犹豫，或者与作者一起写本文档
-    link: https://github.com/Redersha/panda_server_guide_v2/pulls
   - title: ⭐本服性质：轻量插件生存服
     details: 在不改变原版玩法和流程的情况下，加入了少许插件以增加娱乐性
   - title: ⭐本服类型：商业服
