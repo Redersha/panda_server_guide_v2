@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: ⚡️【新手必看】快速开始
-      link: /quick_guides/
+      link: /quick_guides/0_install_and_start
     - theme: alt
       text: 注意事项
       link: /notice/
