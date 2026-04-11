@@ -31,7 +31,7 @@ export default defineConfig({
         link: '/quick_guides/',
         collapsed: false,
         items: [
-          { text: '第一步 - 下载和开始', link: '/quick_guides/1_install_and_start.'}
+          { text: '0 - 下载和开始', link: '/quick_guides/0_install_and_start'}
         ]
       },
       // 第二部分：注意事项
