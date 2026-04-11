@@ -25,14 +25,22 @@ export default defineConfig({
         ]
       }
     ],
-    sidebar: [      
+    sidebar: [
+      {
+        text: '快速指南',
+        link: '/quick_guides/',
+        collapsed: false,
+        items: [
+          { text: '第一步 - 下载和开始', link: '/quick_guides/1_install_and_start.'}
+        ]
+      },
       // 第二部分：注意事项
       {
         text: '注意事项',
         link: '/notice/',
-        collapsed: true,
+        collapsed: false,
         items: [
-          { text: '须知、规则', link: '/notice/notice' },
+          { text: '服务器基本须知、规则', link: '/notice/notice' },
         ]
       },
       
@@ -40,7 +48,7 @@ export default defineConfig({
       {
         text: '插件与命令',
         link: '/plugins/',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: 'QuickShop - 箱子商店', link: '/plugins/quickshop' },
           { text: 'Home - 家系统', link: '/plugins/home' },
