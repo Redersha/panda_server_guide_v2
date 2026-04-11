@@ -12,7 +12,7 @@ hero:
       link: /quick_guides/0_install_and_start
     - theme: alt
       text: 注意事项
-      link: /notice/
+      link: /notice
     - theme: alt
       text: 插件与命令教程
       link: /plugins/

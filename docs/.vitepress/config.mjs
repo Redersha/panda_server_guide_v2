@@ -10,9 +10,18 @@ export default defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: '关于服务器', link: '/about'},
-      { text: '赞助服务器', link: '/sponser'},
-      { text: 'README', link: '/README'},
+      { text: '快速指南', link: '/quick_guides/'},
+      { text: '注意事项', link: '/notice'},
+      { text: '插件与命令教程', link: '/plugins/'},
+      { text: '进阶', link:'/advance/'},
+      {
+        text: '关于服务器',
+        items: [
+          { text: '关于服务器', link: '/about'},
+          { text: '赞助服务器', link: '/sponser'},
+          { text: '番外 - 仍在更新', link: '/side_story/'}
+        ]
+      },
       {
         text: '相关链接', // 创建一个下拉菜单
         items: [
@@ -21,11 +30,21 @@ export default defineConfig({
           { text: 'CraftEngine 文档', link: 'https://xiao-momi.github.io/craft-engine-wiki/zh-Hans/', target: '_blank' },
           { text: 'PCL启动器（GitHub）', link: 'https://github.com/Meloong-Git/PCL', target: '_blank' },
           { text: '下载PCL启动器（爱发电）', link: 'https://ifdian.net/p/0164034c016c11ebafcb52540025c377', target: '_blank' },
-          { text: '服务器在mcmod找服玩的页面', link: 'https://play.mcmod.cn/sv20185385.html', target: '_blank'}
+          { text: '服务器在mcmod找服玩的页面', link: 'https://play.mcmod.cn/sv20185385.html', target: '_blank'},
+          { text: '本项目的README', link: '/README'}
         ]
       }
     ],
+
+    sidebar: {
+      '/quick_guides/': 'auto',     // 自动扫描 guide 目录下的 .md 文件
+      '/plugins/': 'auto',
+      '/advance/': 'auto'
+    },
+
+    /*
     sidebar: [
+
       {
         text: '快速指南',
         link: '/quick_guides/',
@@ -68,6 +87,8 @@ export default defineConfig({
         ]
       }
     ],
+    */
+
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Redersha/panda_server_guide_v2' }
     ],
