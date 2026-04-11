@@ -37,11 +37,7 @@ export default defineConfig({
       // 第二部分：注意事项
       {
         text: '注意事项',
-        link: '/notice/',
-        collapsed: false,
-        items: [
-          { text: '服务器基本须知、规则', link: '/notice/notice' },
-        ]
+        link: '/notice',
       },
       
       // 第三部分：插件与命令
