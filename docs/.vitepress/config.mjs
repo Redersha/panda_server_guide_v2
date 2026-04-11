@@ -5,6 +5,9 @@ export default defineConfig({
   title: "大熊猫服务器文档v2",
   description: "教程、指南与规则",
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
     nav: [
       { text: '首页', link: '/' },
       { text: '关于服务器', link: '/about'},
