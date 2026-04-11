@@ -32,12 +32,7 @@ export default defineConfig({
         link: '/notice/',
         collapsed: true,
         items: [
-          { text: '开始前的准备', link: '/notice/before_playing' },
-          { text: '重要通知', link: '/notice/important_notices' },
-          { text: '禁止行为', link: '/notice/prohibited_acts' },
-          { text: '处罚细则', link: '/notice/penalty_details' },
-          { text: '争议处理原则', link: '/notice/dispute_resolution_principles' },
-
+          { text: '须知、规则', link: '/notice/notice' },
         ]
       },
       
