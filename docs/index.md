@@ -6,9 +6,6 @@ hero:
   name: "大熊猫服务器文档v2"
   text: "教程、指南与规则"
   tagline: 服务器版本1.21.11 / 腐竹是萝莉控大蟑螂
-  image:
-    src: /logo.png
-    alt: logo
   actions:
     - theme: brand
       text: ⚡️【新手必看】快速开始
