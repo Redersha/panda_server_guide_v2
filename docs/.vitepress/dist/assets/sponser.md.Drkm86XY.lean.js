@@ -1,1 +1,0 @@
-import{_ as o,o as t,c as r,ai as s}from"./chunks/framework.CPhGBfAl.js";const m=JSON.parse('{"title":"赞助","description":"","frontmatter":{},"headers":[],"relativePath":"sponser.md","filePath":"sponser.md"}'),a={name:"sponser.md"};function n(p,e,i,c,d,l){return t(),r("div",null,[...e[0]||(e[0]=[s("",4)])])}const g=o(a,[["render",n]]);export{m as __pageData,g as default};

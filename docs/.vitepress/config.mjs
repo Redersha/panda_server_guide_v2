@@ -38,27 +38,8 @@ export default defineConfig({
       }
     ],
 
-    sidebar: {
-      '/quick_guides/': 'auto',
-      '/plugins/': 'auto',
-      '/advance/': 'auto',
-      // 关键修复：为根路径 '/' 添加默认侧边栏，以匹配首页、/notice、/about、/sponser 等独立页面
-      '/': [
-        {
-          text: '文档导航',
-          items: [
-            { text: '首页', link: '/' },
-            { text: '注意事项', link: '/notice' },
-            { text: '关于服务器', link: '/about' },
-            { text: '赞助服务器', link: '/sponser' },
-            { text: '快速指南', link: '/quick_guides/' },
-            { text: '插件与命令教程', link: '/plugins/' },
-            { text: '进阶', link: '/advance/' },
-            { text: '本项目的README', link: '/README' }
-          ]
-        }
-      ]
-    },
+    // 统一使用自动侧边栏，避免 alpha 版本下按目录分组的 sidebar 值为 'auto' 引发构建错误
+    sidebar: 'auto',
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Redersha/panda_server_guide_v2' }
