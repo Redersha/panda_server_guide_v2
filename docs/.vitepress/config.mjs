@@ -6,21 +6,43 @@ export default defineConfig({
   description: "教程、指南与规则",
   themeConfig: {
     search: {
-      provider: 'local'
+      provider: 'local',
+      options: {
+        translations: {
+          button: {
+            buttonText: "搜索文档",
+            buttonAriaLabel: "搜索文档",
+          },
+          modal: {
+            noResultsText: "无法找到相关结果",
+            resetButtonTitle: "清除查询条件",
+            footer: {
+              selectText: "选择",
+              navigateText: "切换",
+            },
+          },
+            },
+          },
     },
     nav: [
+      
       { text: '首页', link: '/' },
-      { text: '快速指南', link: '/quick_guides/'},
       { text: '注意事项', link: '/notice'},
-      { text: '插件与命令教程', link: '/plugins/'},
-      { text: '进阶', link:'/advance/'},
-      {
-        text: '关于服务器',
+      { text: '快速指南', link: '/quick_guides/'},
+      { text: '插件与命令教程', 
         items: [
-          { text: '关于服务器', link: '/about'},
-          { text: '赞助服务器', link: '/sponser'}
+          { text: '插件与命令教程 - 章首简介', link: '/plugins/' },
+          { text: 'QuickShop - 箱子商店', link: '/plugins/quickshop' },
+          { text: 'Home - 家系统', link: '/plugins/home' },
+          { text: 'Teleport - 传送系统', link: '/plugins/teleport' },
+          { text: 'Upgradeable Hoppers - 区块漏斗', link: '/plugins/upgradeable_hoppers' },
+          { text: 'Lands - 领地系统', link: '/plugins/lands' },
+          { text: 'Land War - 领地战争', link: '/plugins/land_war' },
+          { text: 'Quality Crops - 星露谷作物', link: '/plugins/quality_crops' },
+          { text: 'Stardew Fishing - 星露谷钓鱼', link: '/plugins/stardew_fishing' }
         ]
       },
+      { text: '进阶', link:'/advance/'},
       {
         text: '相关链接',
         items: [
@@ -35,16 +57,17 @@ export default defineConfig({
         ]
       }
     ],
-
+/*
     sidebar: [
-      {
-        text: '1. 快速指南',
-        link: '/quick_guides/',
-        collapsed: false,
-        items: [
-          { text: '1.0 - 下载和开始', link: '/quick_guides/0_install_and_start'}
-        ]
-      },
+      
+        {
+          text: '1. 快速指南',
+          link: '/quick_guides/',
+          collapsed: false,
+          items: [
+            { text: '1.0 - 下载和开始', link: '/quick_guides/0_install_and_start'}
+          ]
+        },
       // 第二部分：注意事项
       {
         text: '2. 注意事项',
@@ -79,10 +102,57 @@ export default defineConfig({
         ]
       }
     ],
+    */
+sidebar: {
+      // 为 /quick_guides/ 路径配置侧边栏
+      '/quick_guides/': [
+        {
+          text: '快速指南',
+          items: [
+            { text: '章首简介', link: '/quick_guides/' },
+            { text: '1.0 - 下载和开始', link: '/quick_guides/0_install_and_start'}
+          ]
+        }
+      ],
+      
+      // 为 /plugins/ 路径配置侧边栏
+      '/plugins/': [
+        {
+          text: '插件与命令',
+          items: [
+            { text: '章首简介', link: '/plugins/' },
+            { text: '1 - QuickShop - 箱子商店', link: '/plugins/quickshop' },
+            { text: '2 - Home - 家系统', link: '/plugins/home' },
+            { text: '3 - Teleport - 传送系统', link: '/plugins/teleport' },
+            { text: '4 - Upgradeable Hoppers - 区块漏斗', link: '/plugins/upgradeable_hoppers' },
+            { text: '5 - Lands - 领地系统', link: '/plugins/lands' },
+            { text: '6 - Land War - 领地战争', link: '/plugins/land_war' },
+            { text: '7 - Quality Crops - 星露谷作物', link: '/plugins/quality_crops' },
+            { text: '8 - Stardew Fishing - 星露谷钓鱼', link: '/plugins/stardew_fishing' },
+            { text: '9 - 交易指南', link: '/plugins/trade' }
+          ]
+        }
+      ],
+      
+      // 为 /advance/ 路径配置侧边栏
+      '/advance/': [
+        {
+          text: '进阶',
+          items: [
+            { text: '章首简介', link: '/advance/' },
+            { text: '1 - 自定义唱片', link: '/advance/customize_disc' }
+          ]
+        }
+      ],
+      
+      // 为根路径和其他页面配置侧边栏
+      // 注意：这个配置会匹配所有不匹配上面特定路径的页面
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Redersha/panda_server_guide_v2' }
     ],
+
     footer: {
       message: '本项目使用CC BY-SA 4.0 协议。本文档是独立的玩家创作，与 Mojang Studios、Microsoft、中文 Minecraft Wiki 运营团队无任何隶属关系。',
       copyright: `Copyright © 2019-${new Date().getFullYear()} 大熊猫服务器`

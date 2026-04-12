@@ -1,5 +1,7 @@
 # 快速指南 - 0. 安装和开始
+::: tip 提示
 **加入qq群 276051457**
+:::
 ## 1. 下载和安装启动器
 **推荐使用[PCL启动器](https://ifdian.net/p/0164034c016c11ebafcb52540025c377)**
 
@@ -9,7 +11,7 @@
 ## 2. 下载整合包/原版游戏
 **本服是插件服，不需要玩家安装任何模组，但是可以安装一些能改良原版游戏体验的模组。**
 
-* 推荐使用[已经配置好的整合包](https://github.com/Redersha/Minecraft-JE-Panda-Server-Cilent-Modpack)。
+* 推荐使用[已经配置好的整合包（开箱即用）](https://github.com/Redersha/Minecraft-JE-Panda-Server-Cilent-Modpack)。
 * 或者去PCL启动器的下载页面下载一个性能优化整合包
 
 ## 3. 将本服添加到服务器列表并开始游戏

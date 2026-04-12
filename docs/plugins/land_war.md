@@ -1,6 +1,7 @@
 # 领土战争
 查看全部战争相关指令：`/wars help`。
-详细内容请看https://wiki.incredibleplugins.com/lands/players/general/wars 如果本文与wiki有冲突则以wiki为准。
+
+详细内容请看https://wiki.incredibleplugins.com/lands/players/general/wars。
 
 本章基于上一章中领土部分的进阶内容。
 ## 开战条件

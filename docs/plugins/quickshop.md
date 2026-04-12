@@ -1,5 +1,6 @@
 # 箱子商店
-插件：QuickShop</br>
+插件：QuickShop
+
 使用`/shop`查看箱子商店的全部命令
 
 ## 创建箱子商店

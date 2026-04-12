@@ -23,7 +23,7 @@
 
 ### 注册声音事件
 新建`sounds.json`
-```json
+```json:line-numbers
 {
   "my_song": {
     "sounds": [
@@ -42,7 +42,7 @@
 
 ### 创建曲目定义
 新建`my_song.json`
-```json
+```json:line-numbers
 {
   "comparator_output": 5,
   "description": {
@@ -61,7 +61,7 @@
 
 ### 创建唱片物品
 新建`music_disc_my_song.json.json`
-```json
+```json:line-numbers
 {
   "components": {
     "minecraft:jukebox_playable": {
