@@ -18,8 +18,7 @@ export default defineConfig({
         text: '关于服务器',
         items: [
           { text: '关于服务器', link: '/about'},
-          { text: '赞助服务器', link: '/sponser'},
-          { text: '番外 - 仍在更新', link: '/side_story/'}
+          { text: '赞助服务器', link: '/sponser'}
         ]
       },
       {
