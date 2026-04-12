@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as r,ak as o}from"./chunks/framework.aEAtsvX-.js";const p=JSON.parse('{"title":"关于大熊猫服务器","description":"","frontmatter":{},"headers":[],"relativePath":"about.md","filePath":"about.md"}'),n={name:"about.md"};function s(i,a,l,_,c,d){return t(),r("div",null,[...a[0]||(a[0]=[o("",6)])])}const f=e(n,[["render",s]]);export{p as __pageData,f as default};
