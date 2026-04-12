@@ -61,7 +61,6 @@ export default defineConfig({
     },
 
     socialLinks: [
-      // 修正：修复了错误的 GitHub 链接
       { icon: 'github', link: 'https://github.com/Redersha/panda_server_guide_v2' }
     ],
     footer: {
