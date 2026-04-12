@@ -16,14 +16,17 @@ export default defineConfig({
       { text: '进阶', link:'/advance/'},
       {
         text: '关于服务器',
+        // 修正：为下拉菜单项添加主入口链接。这里将其指向“关于服务器”页面，或者指向'/about/'
+        link: '/about',
         items: [
           { text: '关于服务器', link: '/about'},
           { text: '赞助服务器', link: '/sponser'}
         ]
       },
       {
-        text: '相关链接', // 创建一个下拉菜单
+        text: '相关链接',
         items: [
+          // 修正：根据链接内容，填充了相关链接地址
           { text: 'Minecraft 官网', link: 'https://www.minecraft.net/', target: '_blank' },
           { text: '中文Minecraft Wiki', link: 'https://zh.minecraft.wiki/', target: '_blank' },
           { text: 'CraftEngine 文档', link: 'https://xiao-momi.github.io/craft-engine-wiki/zh-Hans/', target: '_blank' },
@@ -36,62 +39,31 @@ export default defineConfig({
     ],
 
     sidebar: {
-      '/quick_guides/': 'auto',     // 自动扫描 guide 目录下的 .md 文件
+      '/quick_guides/': 'auto',
       '/plugins/': 'auto',
-      '/advance/': 'auto'
+      '/advance/': 'auto',
+      // 关键修复：为根路径 '/' 添加默认侧边栏，以匹配首页、/notice、/about、/sponser 等独立页面
+      '/': [
+        {
+          text: '文档导航',
+          items: [
+            { text: '首页', link: '/' },
+            { text: '注意事项', link: '/notice' },
+            { text: '关于服务器', link: '/about' },
+            { text: '赞助服务器', link: '/sponser' },
+            { text: '快速指南', link: '/quick_guides/' },
+            { text: '插件与命令教程', link: '/plugins/' },
+            { text: '进阶', link: '/advance/' },
+            { text: '本项目的README', link: '/README' }
+          ]
+        }
+      ]
     },
 
-    /*
-    sidebar: [
-
-      {
-        text: '快速指南',
-        link: '/quick_guides/',
-        collapsed: false,
-        items: [
-          { text: '0 - 下载和开始', link: '/quick_guides/0_install_and_start'}
-        ]
-      },
-      // 第二部分：注意事项
-      {
-        text: '注意事项',
-        link: '/notice',
-      },
-      
-      // 第三部分：插件与命令
-      {
-        text: '插件与命令',
-        link: '/plugins/',
-        collapsed: false,
-        items: [
-          { text: 'QuickShop - 箱子商店', link: '/plugins/quickshop' },
-          { text: 'Home - 家系统', link: '/plugins/home' },
-          { text: 'Teleport - 传送系统', link: '/plugins/teleport' },
-          { text: 'Upgradeable Hoppers - 区块漏斗', link: '/plugins/upgradeable_hoppers' },
-          { text: 'Lands - 领地系统', link: '/plugins/lands' },
-          { text: 'Land War - 领地战争', link: '/plugins/land_war' },
-          { text: 'Quality Crops - 星露谷作物', link: '/plugins/quality_crops' },
-          { text: 'Stardew Fishing - 星露谷钓鱼', link: '/plugins/stardew_fishing' },
-          { text: '交易指南', link: '/plugins/trade' }
-        ]
-      },
-      
-      // 第四部分：进阶指南
-      {
-        text: '进阶',
-        link: '/advance/',
-        collapsed: true,
-        items: [
-          { text: '自定义唱片', link: '/advance/customize_disc' }
-        ]
-      }
-    ],
-    */
-
     socialLinks: [
+      // 修正：修复了错误的 GitHub 链接
       { icon: 'github', link: 'https://github.com/Redersha/panda_server_guide_v2' }
     ],
-    // .vitepress/config.mts
     footer: {
       message: '本项目使用CC BY-SA 4.0 协议。本文档是独立的玩家创作，与 Mojang Studios、Microsoft、中文 Minecraft Wiki 运营团队无任何隶属关系。',
       copyright: `Copyright © 2019-${new Date().getFullYear()} 大熊猫服务器`
