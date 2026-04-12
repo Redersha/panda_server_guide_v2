@@ -5,6 +5,13 @@ export default defineConfig({
   title: "大熊猫服务器文档v2",
   description: "教程、指南与规则",
   themeConfig: {
+    lastUpdated: {
+      text: "最后更新于",
+      formatOptions: {
+        dateStyle: "full",
+        timeStyle: "full",
+      },
+    },
     search: {
       provider: 'local',
       options: {
@@ -21,9 +28,19 @@ export default defineConfig({
               navigateText: "切换",
             },
           },
-            },
-          },
+        },
+      },
     },
+    docFooter: {
+      prev: "上一页",
+      next: "下一页",
+    },
+    darkModeSwitchLabel: "主题",
+    lightModeSwitchTitle: "切换至浅色",
+    darkModeSwitchTitle: "切换至深色",
+
+    sidebarMenuLabel: "菜单",
+    returnToTopLabel: "返回顶部",
     nav: [
       
       { text: '首页', link: '/' },
