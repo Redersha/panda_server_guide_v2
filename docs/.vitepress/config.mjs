@@ -45,7 +45,7 @@ export default defineConfig({
       
       { text: '首页', link: '/' },
       { text: '注意事项', link: '/notice'},
-      { text: '快速指南', link: '/quick_guides/'},
+      { text: '安装与开始', link: '/install_and_start'},
       { text: '插件与命令教程', 
         items: [
           { text: '插件与命令教程 - 章首简介', link: '/plugins/' },

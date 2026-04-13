@@ -8,8 +8,8 @@ hero:
   tagline: 服务器版本1.21.11 / 腐竹是萝莉控大蟑螂
   actions:
     - theme: brand
-      text: ⚡️【新手必看】快速开始
-      link: /quick_guides/
+      text: ⚡️【新手必看】安装和开始
+      link: /install_and_start
     - theme: alt
       text: 注意事项
       link: /notice
