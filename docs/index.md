@@ -41,6 +41,8 @@ features:
 
 ## 为本文档做贡献
 * 如果你想长期地进行本文档的编写，[联系作者](mailto:mechsteam@outlook.com)（或在q群联系`@再也不剪宣传片了`）吧！
+  * 如果你掌握这些技能，将有利于你对本文档的贡献工作！
+    [![My Skills](https://skillicons.dev/icons?i=git,github,md,vscode,vite,vue)](https://skillicons.dev)
 * 如果你只想贡献一两篇文章，请[提交issues](https://github.com/Redersha/panda_server_guide_v2/issues)并附上md文件。
 
 ## 关于大熊猫服务器
