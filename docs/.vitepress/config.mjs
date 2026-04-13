@@ -121,16 +121,6 @@ export default defineConfig({
     ],
     */
 sidebar: {
-      // 为 /quick_guides/ 路径配置侧边栏
-      '/quick_guides/': [
-        {
-          text: '快速指南',
-          items: [
-            { text: '章首简介', link: '/quick_guides/' },
-            { text: '1.0 - 下载和开始', link: '/quick_guides/0_install_and_start'}
-          ]
-        }
-      ],
       
       // 为 /plugins/ 路径配置侧边栏
       '/plugins/': [
@@ -171,7 +161,7 @@ sidebar: {
     ],
 
     footer: {
-      message: '本项目使用CC BY-SA 4.0 协议。本文档是独立的玩家创作，与 Mojang Studios、Microsoft、中文 Minecraft Wiki 运营团队无任何隶属关系。',
+      message: '本项目使用 MIT 协议。本文档是独立的玩家创作，与 Mojang Studios、Microsoft、中文 Minecraft Wiki 运营团队无任何隶属关系。',
       copyright: `Copyright © 2019-${new Date().getFullYear()} 大熊猫服务器`
     }
   }
