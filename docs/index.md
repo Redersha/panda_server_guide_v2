@@ -23,14 +23,11 @@ hero:
       text: 赞助服务器
       link: /index#赞助服务器
 
-features:
-  - title: 🐧QQ群号276051457
-    details: 愣着干嘛快进群
-  - title: ⭐本服性质：轻量插件生存服
-    details: 在不改变原版玩法和流程的情况下，加入了少许插件以增加娱乐性
-  - title: ⭐本服类型：商业服
-    details: 商业的部分是赞助，维持服务器开设需要钱，但是不会因任何的资助行为而造成玩家之间的差距
 ---
+
+::: tip 🐧QQ群号276051457
+愣着干嘛快进群
+:::
 
 ## 欢迎！
 我们是大熊猫服务器，一个<mark>高版本生存服</mark>！
@@ -38,12 +35,6 @@ features:
 我们追求原版体验，但是又引入了插件以提升娱乐性。
 
 服务器适合养老，玩家氛围和谐，群友们很喜欢聊日常。
-
-## 为本文档做贡献
-* 如果你想长期地进行本文档的编写，[联系作者](mailto:mechsteam@outlook.com)（或在q群联系`@再也不剪宣传片了`）吧！
-  * 如果你掌握这些技能，将有利于你对本文档的贡献工作！
-    [![git,github,md,vscode,vite,vue](https://skillicons.dev/icons?i=git,github,md,vscode,vite,vue)](https://skillicons.dev)
-* 如果你只想贡献一两篇文章，请[提交issues](https://github.com/Redersha/panda_server_guide_v2/issues)并附上md文件。
 
 ## 关于大熊猫服务器
 
@@ -71,3 +62,7 @@ features:
 :::
 
 前两种可以在游戏中输入`/菜单`后，于界面右下角点击赞助菜单进入相关界面。
+
+---
+
+[![GitHub Repo](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/Redersha/panda_server_guide_v2) [![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://github.com/Redersha/panda_server_guide_v2?tab=MIT-1-ov-file) [![Powered%20By: VitePress](https://img.shields.io/badge/PoweredBy-VitePress-purple)](https://vitepress.dev/zh/)
