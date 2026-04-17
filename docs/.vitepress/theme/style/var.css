@@ -1,6 +1,6 @@
 /* var.css */
 :root {
-  --vp-c-brand-1: #3d68d6;
+  --vp-c-brand-1: #5880e4;
   --vp-c-brand-2: #3055a4;
   --vp-c-brand-3: #2b2984;
   --vp-custom-block-tip-bg: var(--vp-c-green-soft);
@@ -16,11 +16,13 @@
 }
 
 .dark {
-  --vp-c-brand-1: #3d68d6;
+  --vp-c-brand-1: #5880e4;
   --vp-c-brand-2: #3055a4;
   --vp-c-brand-3: #2b2984;
 }
 /* 以前的vp-c-brand已弃用 */
+
+
 
 :root {
   /* hero标题渐变色 */
@@ -39,6 +41,8 @@
   );
   --vp-home-hero-image-filter: blur(40px);
 }
+
+
 
 /* 也可自行单独修改brand按钮 */
 /* :root {

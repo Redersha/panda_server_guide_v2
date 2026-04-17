@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "大熊猫服务器文档v2"
-  text: "教程、指南与规则"
-  tagline: 服务器版本1.21.11 / 腐竹是萝莉控大蟑螂
+  text: "教程、指南、规则与更多"
+  tagline: <mark>Java Edition 1.21.11</mark> / 服务器始于2019
   actions:
     - theme: brand
       text: ⚡️【新手必看】安装和开始
@@ -25,8 +25,11 @@ hero:
 
 ---
 
-::: tip 🐧QQ群号276051457
-愣着干嘛快进群
+::: tip 提示
+1. 加入qq群 `276051457`
+2. 使用一个 JE 1.21.1 的客户端访问服务器 - 详见[”安装和开始“](/install_and_start)
+3. 使用命令 `/reg [密码] [密码]` 以注册账号
+4. 玩！
 :::
 
 ## 欢迎！

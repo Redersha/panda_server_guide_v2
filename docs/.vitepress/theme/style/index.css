@@ -1,2 +1,14 @@
 /* index.css */
 @import "./var.css";
+
+mark {
+  background-color: #3bd5ff;
+  color: #111;
+  border-radius: 2px;
+  padding: 0 0.2em;
+}
+
+.dark mark {
+  background-color: #269dbe;
+  color: #111;
+}
