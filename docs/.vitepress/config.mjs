@@ -135,8 +135,7 @@ sidebar: {
             { text: '5 - Lands - 领地系统', link: '/plugins/lands' },
             { text: '6 - Land War - 领地战争', link: '/plugins/land_war' },
             { text: '7 - Quality Crops - 星露谷作物', link: '/plugins/quality_crops' },
-            { text: '8 - Stardew Fishing - 星露谷钓鱼', link: '/plugins/stardew_fishing' },
-            { text: '9 - 交易指南', link: '/plugins/trade' }
+            { text: '8 - Stardew Fishing - 星露谷钓鱼', link: '/plugins/stardew_fishing' }
           ]
         }
       ],
