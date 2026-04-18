@@ -69,7 +69,7 @@ hero:
 本文档欢迎社区贡献！如有建议或错误，请：
 - [提交Issues](https://github.com/Redersha/panda_server_guide_v2/issues)
 - 附上markdown文件
-- 或联系群内管理员
+- 或联系q群 `@再也不剪宣传片了`
 
 ---
 
