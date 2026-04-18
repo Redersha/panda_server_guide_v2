@@ -44,8 +44,8 @@ export default defineConfig({
     nav: [
       
       { text: '首页', link: '/' },
-      { text: '注意事项', link: '/notice'},
       { text: '安装与开始', link: '/install_and_start'},
+      { text: '注意事项', link: '/notice'},
       { text: '插件与命令教程', 
         items: [
           { text: '插件与命令教程 - 章首简介', link: '/plugins/' },
