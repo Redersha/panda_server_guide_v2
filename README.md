@@ -1,4 +1,6 @@
-# panda_server_guide_v2/大熊猫服务器文档v2 
+# panda_server_guide_v2/大熊猫服务器文档v2
+
+[![GitHub Repo](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/Redersha/panda_server_guide_v2) [![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://github.com/Redersha/panda_server_guide_v2?tab=MIT-1-ov-file) [![Powered%20By: VitePress](https://img.shields.io/badge/PoweredBy-VitePress-purple)](https://vitepress.dev/zh/)
 
 **加入服务器交流群：276051457**</br>
 
