@@ -49,14 +49,14 @@ export default defineConfig({
       { text: '插件与命令教程', 
         items: [
           { text: '插件与命令教程 - 章首简介', link: '/plugins/' },
-          { text: 'QuickShop - 箱子商店', link: '/plugins/quickshop' },
-          { text: 'Home - 家系统', link: '/plugins/home' },
-          { text: 'Teleport - 传送系统', link: '/plugins/teleport' },
-          { text: 'Upgradeable Hoppers - 区块漏斗', link: '/plugins/upgradeable_hoppers' },
-          { text: 'Lands - 领地系统', link: '/plugins/lands' },
-          { text: 'Land War - 领地战争', link: '/plugins/land_war' },
-          { text: 'Quality Crops - 星露谷作物', link: '/plugins/quality_crops' },
-          { text: 'Stardew Fishing - 星露谷钓鱼', link: '/plugins/stardew_fishing' }
+          { text: '箱子商店', link: '/plugins/quickshop' },
+          { text: '家系统', link: '/plugins/home' },
+          { text: '传送系统', link: '/plugins/teleport' },
+          { text: '区块漏斗', link: '/plugins/upgradeable_hoppers' },
+          { text: '领地系统', link: '/plugins/lands' },
+          { text: '领地战争', link: '/plugins/land_war' },
+          { text: '星露谷作物', link: '/plugins/quality_crops' },
+          { text: '星露谷钓鱼', link: '/plugins/stardew_fishing' }
         ]
       },
       { text: '进阶', link:'/advance/'},
