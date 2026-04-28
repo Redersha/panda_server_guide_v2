@@ -7,7 +7,7 @@
 
 * 如果不能打开，请下载并安装[运行环境](https://ltcat.lanzouv.com/i1mhD2drlvpa)
 
-更多有关PCL的错误，可以在群里[问群友](/docs/other/asking_requirements.md)或者查看[PCL常见问题](https://shimo.im/docs/qKPttVvXKqPD8YDC)
+更多有关PCL的错误，可以在群里[问群友](/other/asking_requirements.md)或者查看[PCL常见问题](https://shimo.im/docs/qKPttVvXKqPD8YDC)
 ## 2. 下载整合包/原版游戏
 **本服是插件服，不需要玩家安装任何模组，但是可以安装一些能改良原版游戏体验的模组。**
 
