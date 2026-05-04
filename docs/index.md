@@ -35,7 +35,7 @@ features:
   - icon: ⚖️
     title: 保障玩家权利
     details: 账号被盗、他人恶意行为、物品纠纷、领地纠纷、玩家冲突均可直接在群里反应。群友们会发力的。点击此卡片查看详情。
-    link: /notice.md
+    link: /main/notice.md
 
 ---
 
