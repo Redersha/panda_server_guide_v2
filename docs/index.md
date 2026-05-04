@@ -4,59 +4,41 @@ layout: home
 
 hero:
   name: "大熊猫服务器文档v2"
-  text: "教程、指南、规则与更多"
-  tagline: <mark>Java Edition 1.21.11</mark> / 服务器始于2019
+  text: "教程、指南与更多"
+  tagline: <mark>Java Edition 1.21.11</mark> / 服务器始于2019 / Q276051457
   actions:
     - theme: brand
       text: ⚡️【新手必看】安装和开始
-      link: /install_and_start
-    - theme: alt
-      text: 注意事项
-      link: /notice
+      link: /main/install_and_start
     - theme: alt
       text: 插件与命令教程
-      link: /plugins/
+      link: /main/plugins/
     - theme: alt
       text: 进阶
-      link: /advance/
----
+      link: /main/advance/
 
-**我们是大熊猫服务器，一个<mark>高版本生存服</mark>！**
-
-::: tip 提示
-1. 加入qq群 `276051457`
-2. 使用一个 JE 1.21.11 的客户端访问服务器 - 详见[”安装和开始“](/install_and_start)
-3. 使用命令 `/reg [密码] [密码]` 以注册账号
-4. 玩！
-:::
-
-## 关于大熊猫服务器
-
-这是一个始于2019年9月的老牌服务器。自Minecraft 1.14版本开服，历经数个版本周期与周目，始终由服主一人独立管理、更新与维护，坚持运营至今。
-
-由于服务器运营需要承担电费、网费等基础开销，无法长期维持公益模式，自1.14版本后已全面转为商业服务器。我们坚持使用正版插件以确保稳定与安全，并注重售后维护。**虽然转为商业运营，但游戏内充值玩家与非充值玩家之间的差距很小，不会因赞助而偏袒任何玩家，全力保障所有玩家的公平游戏体验。**
-
-**本服正朝轻RPG与多元化玩法发展，定位为插件服，而非纯粹的生电服。** 在不完全禁止生电行为的前提下会进行适当限制，属于半生电服。通过拓展更多游戏内容，旨在延长服务器生命周期，为玩家提供持久而丰富的体验。
-
-::: details 赞助服务器
-**赞助是获得不影响游戏平衡的游戏权限的重要途径**，主要包括三种方式：直接购买点券、购买月卡（减负包）以及参与众筹。
-
-| 项目 | 主要用途与特点 | 核心奖励与权益 |
-| :--- | :--- | :--- |
-| **点券** | 用于购买权限的主要代币。 | - 可兑换游戏币、彩色聊天字体、更多附魔查询、称号装饰、增加上架物品数量等功能性或装饰性权限。<br>- 有效期通常为一个月。 |
-| **月卡**<br>(减负包) | 按月订阅服务，提供持续的游戏内收益与福利。 | - **购买即得**：200点券。<br>- **每日领取**：800游戏币 + 1个不死图腾。<br>- **持续特权**：圈地价格降低0.1、领地上限+1、mcmmo经验获取+10%。 |
-| **众筹** | 多人共同赞助以添加新插件，侧重于娱乐与便利。 | - 加入众筹组，获得额外领地及设家上限。<br>- 解锁部分娱乐/功能插件权限（如CMI的`/ride`、`/hat`、盔甲架编辑等），不影响游戏平衡。 |
-
-前两种可以在游戏中输入`/菜单`后，于界面右下角点击赞助菜单进入相关界面。
-:::
-
-::: details 贡献
-本文档欢迎贡献！如有建议或错误，请：
-- [提交Issues](https://github.com/Redersha/panda_server_guide_v2/issues)
-- 附上markdown文件
-- 或联系q群 `@再也不剪宣传片了`
-:::
+features:
+  - icon: ℹ️
+    title: 关于服务器
+    details: 使用Purpur插件服核心的高版本生存服，适合养老、唠嗑。点击此卡片查看详情。
+    link: /other/about
+  - icon: 👬
+    title: 氛围友好
+    details: 服务器没有熊孩子，氛围友好。我们支持玩家互帮互助、建立群体（领土、国家）
+  - icon: 🎮
+    title: 娱乐性
+    details: 精心设计的额外内容，在不改变原版内容的前提下，进一步提升娱乐性
+  - icon: 👤 
+    title: 支持非正版玩家
+    details: 我们关闭了在线验证，这样就算你使用第三方（如LittleSkin）或离线账号也可以登陆服务器。点击此卡片查看详情。
+    link: /other/types_of_accounts
+  - icon: ⚖️
+    title: 保障玩家权利
+    details: 账号被盗、他人恶意行为、物品纠纷、领地纠纷、玩家冲突均可直接在群里反应。群友们会发力的。点击此卡片查看详情。
+    link: /notice.md
 
 ---
+
+<ServerStatus />
 
 [![GitHub Repo](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/Redersha/panda_server_guide_v2) [![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://github.com/Redersha/panda_server_guide_v2?tab=MIT-1-ov-file) [![Powered%20By: VitePress](https://img.shields.io/badge/PoweredBy-VitePress-purple)](https://vitepress.dev/zh/)

@@ -44,15 +44,15 @@ export default defineConfig({
     nav: [
       
       { text: '首页', link: '/' },
-      {
-        text: '正文',
-        link: '/notice',
-        activeMatch: '^/(install_and_start|notice|plugins|advance)(/|$)',
+      { 
+        text: '正文', 
+        link: '/main/notice', 
+        activeMatch: '^/(main/install_and_start|main/notice|main/plugins|main/advance)(/|$)' 
       },
-      {
-        text: '其他内容',
-        link: '/other/',
-        activeMatch: '^/other(/|$)',
+      { 
+        text: '其他内容', 
+        link: '/other/', 
+        activeMatch: '^/other(/|$)' 
       },
       {
         text: '相关链接',
@@ -69,86 +69,55 @@ export default defineConfig({
       }
     ],
 
-    sidebar: [
-      {
-        text: '0. 下载和开始',
-        link: '/install_and_start',
-      },
-      {
-        text: '1. 注意事项',
-        link: '/notice',
-      },
-      
-      {
-        text: '2. 插件与命令',
-        link: '/plugins/',
-        
-        items: [
-          { text: '2.1 - QuickShop - 箱子商店', link: '/plugins/quickshop' },
-          { text: '2.2 - Home - 家系统', link: '/plugins/home' },
-          { text: '2.3 - Teleport - 传送系统', link: '/plugins/teleport' },
-          { text: '2.4 - Upgradeable Hoppers - 区块漏斗', link: '/plugins/upgradeable_hoppers' },
-          { text: '2.5 - Lands - 领地系统', link: '/plugins/lands' },
-          { text: '2.6 - Land War - 领地战争', link: '/plugins/land_war' },
-          { text: '2.7 - Quality Crops - 星露谷作物', link: '/plugins/quality_crops' },
-          { text: '2.8 - Stardew Fishing - 星露谷钓鱼', link: '/plugins/stardew_fishing' },
-        ]
-      },
-      
-      {
-        text: '3. 进阶',
-        link: '/advance/',
-        items: [
-          { text: '3.1 - 自定义唱片', link: '/advance/customize_disc' }
-        ]
-      },
-
-      {
-        text: 'ex. 其他内容',
-        link: '/other/',
-        items: [
-          { text: 'ex. 1 - 问问题的要求', link: '/other/asking_requirements' },
-          { text: 'ex. 2 - 番外', link: '/other/extra' },
-          { text: 'ex. 3 - 服务器宣传片', link: '/other/videos' }
-        ]
-      }
-    ],
-/*
-sidebar: {
-      
-      // 为 /plugins/ 路径配置侧边栏
-      '/plugins/': [
+    sidebar: {
+      // 为 /main/ 路径配置侧边栏
+      '/main/': [
         {
-          text: '插件与命令',
+          text: '0. 下载和开始',
+          link: '/main/install_and_start',
+        },
+        {
+          text: '1. 注意事项',
+          link: '/main/notice',
+        },
+        {
+          text: '2. 插件与命令',
+          link: '/main/plugins/',
           items: [
-            { text: '章首简介', link: '/plugins/' },
-            { text: '1 - QuickShop - 箱子商店', link: '/plugins/quickshop' },
-            { text: '2 - Home - 家系统', link: '/plugins/home' },
-            { text: '3 - Teleport - 传送系统', link: '/plugins/teleport' },
-            { text: '4 - Upgradeable Hoppers - 区块漏斗', link: '/plugins/upgradeable_hoppers' },
-            { text: '5 - Lands - 领地系统', link: '/plugins/lands' },
-            { text: '6 - Land War - 领地战争', link: '/plugins/land_war' },
-            { text: '7 - Quality Crops - 星露谷作物', link: '/plugins/quality_crops' },
-            { text: '8 - Stardew Fishing - 星露谷钓鱼', link: '/plugins/stardew_fishing' }
+            { text: '2.1 - QuickShop - 箱子商店', link: '/main/plugins/quickshop' },
+            { text: '2.2 - Home - 家系统', link: '/main/plugins/home' },
+            { text: '2.3 - Teleport - 传送系统', link: '/main/plugins/teleport' },
+            { text: '2.4 - Upgradeable Hoppers - 区块漏斗', link: '/main/plugins/upgradeable_hoppers' },
+            { text: '2.5 - Lands - 领地系统', link: '/main/plugins/lands' },
+            { text: '2.6 - Land War - 领地战争', link: '/main/plugins/land_war' },
+            { text: '2.7 - Quality Crops - 星露谷作物', link: '/main/plugins/quality_crops' },
+            { text: '2.8 - Stardew Fishing - 星露谷钓鱼', link: '/main/plugins/stardew_fishing' },
+          ]
+        },
+        {
+          text: '3. 进阶',
+          link: '/main/advance/',
+          items: [
+            { text: '3.1 - 自定义唱片', link: '/main/advance/customize_disc' }
           ]
         }
       ],
       
-      // 为 /advance/ 路径配置侧边栏
-      '/advance/': [
+      // 为 /other/ 路径配置侧边栏
+      '/other/': [
         {
-          text: '进阶',
+          text: 'ex. 其他内容',
+          link: '/other/',
           items: [
-            { text: '章首简介', link: '/advance/' },
-            { text: '1 - 自定义唱片', link: '/advance/customize_disc' }
+            { text: '关于服务器', link: '/other/about' },
+            { text: '不同的账号形式 - 第三方、离线、正版', link: '/other/types_of_accounts' },
+            { text: 'ex. 1 - 问问题的要求', link: '/other/asking_requirements' },
+            { text: 'ex. 2 - 番外', link: '/other/extra' },
+            { text: 'ex. 3 - 服务器宣传片', link: '/other/videos' }
           ]
         }
       ],
-      
-      // 为根路径和其他页面配置侧边栏
-      // 注意：这个配置会匹配所有不匹配上面特定路径的页面
     },
-    */
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Redersha/panda_server_guide_v2' }

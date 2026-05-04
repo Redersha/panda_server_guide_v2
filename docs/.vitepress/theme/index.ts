@@ -1,7 +1,10 @@
 import DefaultTheme from "vitepress/theme";
+import ServerStatus from "./components/ServerStatus.vue";
 import "./style/index.css"; //引入自定义的样式
 
 export default {
   extends: DefaultTheme,
-  // ...DefaultTheme, //或者这样写也可
+  enhanceApp({ app }) {
+    app.component('ServerStatus', ServerStatus);
+  },
 };
