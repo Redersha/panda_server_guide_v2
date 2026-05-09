@@ -13,15 +13,13 @@
       
       <div v-else class="status-content">
         <div class="status-indicator" :class="{ online: status?.online, offline: !status?.online }"></div>
-        <span class="server-name">服务器状态 - 非实时</span>
+        <span class="server-name">服务器状态</span>
         <span class="divider"></span>
         <span class="status-text" :class="{ online: status?.online, offline: !status?.online }">
           {{ status?.online ? '在线' : '离线' }}
         </span>
         <span class="divider"></span>
         <span class="player-count">{{ status?.online ? `${status.players.online}/${status.players.max}` : '--' }}</span>
-        <span class="divider"></span>
-        <span class="latency" :class="getPingClass(latency)">{{ latency ? `${latency}ms` : '--' }}</span>
       </div>
     </div>
   </div>
@@ -34,15 +32,6 @@ const serverAddress = ref('panda.neiki.top')
 const status = ref(null)
 const loading = ref(true)
 const error = ref('')
-const latency = ref(null)
-
-// 根据延迟值返回CSS类
-const getPingClass = (ping) => {
-  if (!ping) return ''
-  if (ping < 100) return 'ping-good'
-  if (ping < 200) return 'ping-medium'
-  return 'ping-bad'
-}
 
 // 获取服务器状态
 const fetchStatus = async () => {
@@ -50,17 +39,13 @@ const fetchStatus = async () => {
   error.value = ''
   
   try {
-    const startTime = Date.now()
     const response = await fetch(`https://api.mcsrvstat.us/2/${serverAddress.value}?t=${Date.now()}`)
     const data = await response.json()
-    const endTime = Date.now()
     
     if (data.online !== undefined) {
       status.value = data
-      latency.value = data.ping || (endTime - startTime)
     } else {
       status.value = { online: false }
-      latency.value = null
     }
   } catch (err) {
     console.error('查询失败:', err)
@@ -86,12 +71,11 @@ onMounted(() => {
 
 .island-container {
   position: relative;
-  min-width: 280px;
+  display: inline-flex;
   height: 44px;
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   border-radius: 22px;
   padding: 0 20px;
-  display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -228,29 +212,9 @@ onMounted(() => {
   font-family: 'SF Mono', Monaco, Consolas, monospace;
 }
 
-.latency {
-  font-size: 13px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.7);
-  font-family: 'SF Mono', Monaco, Consolas, monospace;
-}
-
-.ping-good {
-  color: #4ade80 !important;
-}
-
-.ping-medium {
-  color: #fde047 !important;
-}
-
-.ping-bad {
-  color: #f87171 !important;
-}
-
 /* 响应式调整 */
 @media (max-width: 768px) {
   .island-container {
-    min-width: 240px;
     height: 40px;
     border-radius: 20px;
     padding: 0 16px;
