@@ -24,7 +24,7 @@ jobs:
           node-version: 22
           cache: pnpm
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile --approve-builds
+        run: pnpm install --no-frozen-lockfile
       - name: Build VitePress site
         run: pnpm run build
       - name: Configure Git
