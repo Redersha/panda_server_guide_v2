@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "vitepress": "2.0.0-alpha.17"
+    "vitepress": "1.0.2"
   },
   "scripts": {
     "dev": "vitepress dev docs",
@@ -8,6 +8,10 @@
     "preview": "vitepress preview docs"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["esbuild"]
+    "onlyBuiltDependencies": ["esbuild"],
+    "overrides": {
+      "esbuild": "0.19.12",
+      "@esbuild/darwin-x64": "0.19.12"
+    }
   }
 }
