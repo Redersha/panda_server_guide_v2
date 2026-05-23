@@ -1,10 +1,14 @@
 import DefaultTheme from "vitepress/theme";
 import ServerStatus from "./components/ServerStatus.vue";
-import "./style/index.css"; //引入自定义的样式
+import LiquidGlass from "./components/LiquidGlass.vue";
+import PhotoAlbum from "./components/PhotoAlbum.vue";
+import "./style/index.css";
 
 export default {
   extends: DefaultTheme,
   enhanceApp({ app }) {
     app.component('ServerStatus', ServerStatus);
+    app.component('LiquidGlass', LiquidGlass);
+    app.component('PhotoAlbum', PhotoAlbum);
   },
 };

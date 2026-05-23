@@ -4,6 +4,12 @@ export default defineConfig({
   base: '/panda_server_guide_v2/',
   title: "大熊猫服务器文档v2",
   description: "教程、指南与规则",
+  markdown: {
+    theme: {
+      light: 'github-dark',
+      dark: 'github-dark',
+    },
+  },
   themeConfig: {
     lastUpdated: {
       text: "最后更新于",
@@ -113,7 +119,8 @@ export default defineConfig({
             { text: '不同的账号形式 - 第三方、离线、正版', link: '/other/types_of_accounts' },
             { text: 'ex. 1 - 问问题的要求', link: '/other/asking_requirements' },
             { text: 'ex. 2 - 番外', link: '/other/extra' },
-            { text: 'ex. 3 - 服务器宣传片', link: '/other/videos' }
+            { text: 'ex. 3 - 服务器宣传片', link: '/other/videos' },
+            { text: '📷 服务器相册', link: '/other/albums' }
           ]
         }
       ],

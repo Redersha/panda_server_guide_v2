@@ -8,10 +8,16 @@
     "preview": "vitepress preview docs"
   },
   "pnpm": {
-    "onlyBuiltDependencies": ["esbuild", "vue-demi"],
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "vue-demi"
+    ],
     "overrides": {
       "esbuild": "0.19.12",
       "@esbuild/darwin-x64": "0.19.12"
     }
+  },
+  "dependencies": {
+    "vue-router": "^5.0.7"
   }
 }

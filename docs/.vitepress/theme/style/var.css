@@ -1,58 +1,119 @@
-/* var.css */
+/* var.css - 精致拟态玻璃风格 CSS 变量 */
 :root {
-  --vp-c-brand-1: #5880e4;
-  --vp-c-brand-2: #3055a4;
-  --vp-c-brand-3: #2b2984;
-  --vp-custom-block-tip-bg: var(--vp-c-green-soft);
-  --vp-button-brand-border: #64cae6e9;
-  --vp-button-brand-text: #ffffff;
-  --vp-button-brand-bg: #45ade9;
+  /* 品牌色 - 草绿/草黄/哈密瓜色系 */
+  --vp-c-brand-1: #6bae3e;
+  --vp-c-brand-2: #5a9630;
+  --vp-c-brand-3: #457120;
+  --vp-c-brand-soft: rgba(107, 174, 62, 0.14);
 
-  --vp-button-brand-hover-border: #b98ce6e4;
-  --vp-button-brand-hover-text: #fff;
-  --vp-button-brand-hover-bg: #9a77ff;
+  /* 按钮 */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #1a1a1a;
+  --vp-button-brand-bg: linear-gradient(135deg, #6bae3e, #b5c840);
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #1a1a1a;
+  --vp-button-brand-hover-bg: linear-gradient(135deg, #7cbf48, #c8d94a);
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-bg: linear-gradient(135deg, #5a9630, #a0b835);
 
-  --vp-button-brand-active-border: #F6CEEC;
-}
+  --vp-button-alt-border: transparent;
+  --vp-button-alt-text: #555;
+  --vp-button-alt-bg: #e8ebef;
+  --vp-button-alt-hover-text: #333;
+  --vp-button-alt-hover-bg: #dde1e6;
+  --vp-button-alt-active-bg: #cfd4da;
 
-.dark {
-  --vp-c-brand-1: #5880e4;
-  --vp-c-brand-2: #3055a4;
-  --vp-c-brand-3: #2b2984;
-}
-/* 以前的vp-c-brand已弃用 */
-
-
-
-:root {
-  /* hero标题渐变色 */
+  /* 主页 Hero */
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(
-    120deg,
-    #bd34fe,
-    #41d1ff
-  );
+  --vp-home-hero-name-background: linear-gradient(135deg, #6bae3e 20%, #b5c840 50%, #e8c87a 80%);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #6bae3e 40%, #e8dbb8 60%);
+  --vp-home-hero-image-filter: blur(56px);
 
-  /*hero logo背景渐变色 */
-  --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #bd34fe 50%,
-    #3379c5 50%
-  );
-  --vp-home-hero-image-filter: blur(40px);
+  /* 通用背景与文字 */
+  --vp-c-bg: #eceef1;
+  --vp-c-bg-elv: rgba(255, 255, 255, 0.55);
+  --vp-c-bg-soft: rgba(255, 255, 255, 0.4);
+  --vp-c-bg-alt: #e2e5e9;
+  --vp-c-text-1: #3a3a3a;
+  --vp-c-text-2: #5a5a5a;
+  --vp-c-border: rgba(0, 0, 0, 0.06);
+  --vp-c-divider: rgba(0, 0, 0, 0.06);
+
+  /* 导航栏 */
+  --vp-nav-bg-color: rgba(255, 255, 255, 0.6);
+  --vp-nav-height: 64px;
+
+  /* 侧边栏 */
+  --vp-sidebar-bg-color: rgba(255, 255, 255, 0.35);
+
+  /* 代码块 */
+  --vp-code-block-bg: rgba(30, 30, 40, 0.85);
+  --vp-code-block-color: #d4d4d4;
+  --vp-code-line-number-color: rgba(255, 255, 255, 0.45);
+  --vp-custom-block-tip-bg: rgba(107, 174, 62, 0.08);
+  --vp-custom-block-tip-border: #6bae3e;
+
+  /*
+   * 背景模式切换（只改下面 --bg-image 一行，保存即生效）：
+   *
+   *   --bg-image: none;
+   *     → 纯网格背景（当前默认）
+   *
+   *   --bg-image: url('/bg.jpg');
+   *     → 图片背景，图片放在 docs/public/bg.jpg
+   *     → 图片自动铺满全屏（cover + no-repeat）
+   *
+   *   想切回来：改回 none 即可。
+   */
+  --bg-image: none;
+
+  /* 阴影色 */
+  --glass-shadow-light: rgba(255, 255, 255, 0.8);
+  --glass-shadow-dark: rgba(0, 0, 0, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.5);
 }
 
+/* 暗色模式 */
+.dark {
+  --vp-c-brand-1: #7cbf48;
+  --vp-c-brand-2: #8ed058;
+  --vp-c-brand-3: #6bae3e;
+  --vp-c-brand-soft: rgba(124, 191, 72, 0.14);
 
+  --vp-button-brand-bg: linear-gradient(135deg, #6bae3e, #b5c840);
+  --vp-button-brand-text: #1a1a1a;
+  --vp-button-brand-hover-bg: linear-gradient(135deg, #7cbf48, #c8d94a);
+  --vp-button-brand-hover-text: #1a1a1a;
+  --vp-button-brand-active-bg: linear-gradient(135deg, #5a9630, #a0b835);
 
-/* 也可自行单独修改brand按钮 */
-/* :root {
-  --vp-button-brand-border: #F6CEEC;
-  --vp-button-brand-text: #F6CEEC;
-  --vp-button-brand-bg: #D939CD;
+  --vp-button-alt-text: #bbb;
+  --vp-button-alt-bg: rgba(60, 60, 70, 0.7);
+  --vp-button-alt-hover-text: #ddd;
+  --vp-button-alt-hover-bg: rgba(70, 70, 80, 0.8);
+  --vp-button-alt-active-bg: rgba(50, 50, 60, 0.8);
 
-  --vp-button-brand-hover-border: #F6CEEC;
-  --vp-button-brand-hover-text: #fff;
-  --vp-button-brand-hover-bg: #D939CD;
+  --vp-home-hero-name-background: linear-gradient(135deg, #7cbf48 20%, #c8d94a 50%, #e8c87a 80%);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #5a9630 40%, #3a4a28 60%);
+  --vp-home-hero-image-filter: blur(56px);
 
-  --vp-button-brand-active-border: #F6CEEC;
-} */
+  --vp-c-bg: #1a1a22;
+  --vp-c-bg-elv: rgba(35, 35, 45, 0.7);
+  --vp-c-bg-soft: rgba(30, 30, 40, 0.6);
+  --vp-c-bg-alt: #22222c;
+  --vp-c-text-1: #e0e0e0;
+  --vp-c-text-2: #b0b0b0;
+  --vp-c-border: rgba(255, 255, 255, 0.06);
+  --vp-c-divider: rgba(255, 255, 255, 0.06);
+
+  --vp-nav-bg-color: rgba(30, 30, 40, 0.7);
+  --vp-sidebar-bg-color: rgba(25, 25, 35, 0.5);
+
+  --vp-code-block-bg: rgba(20, 20, 28, 0.9);
+  --vp-code-block-color: #d4d4d4;
+  --vp-code-line-number-color: rgba(255, 255, 255, 0.38);
+  --vp-custom-block-tip-bg: rgba(124, 191, 72, 0.08);
+
+  --glass-shadow-light: rgba(255, 255, 255, 0.04);
+  --glass-shadow-dark: rgba(0, 0, 0, 0.3);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}

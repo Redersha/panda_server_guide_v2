@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "大熊猫服务器文档v2"
+  name: "大熊猫服务器文档 v2"
   text: "教程、指南与更多"
   tagline: <mark>Java Edition 1.21.11</mark> / 服务器始于2019 / Q276051457
   actions:
@@ -39,4 +39,7 @@ features:
 
 ---
 
-<ServerStatus />
+<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1rem; padding: 10rem 0;">
+  <ServerStatus />
+  <LiquidGlass text="服务器相册" link="/other/albums" />
+</div>
